@@ -1,0 +1,687 @@
+/* RESET */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+ins {
+  background-color: #FF9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1em 0;
+  padding: 0;
+}
+input, select {
+  vertical-align: middle;
+}
+/* END RESET */
+
+
+/* Standard Styles */
+* {
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+    display: block;
+}
+
+
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: #000;
+    font-family: verdana;
+}
+h1 {
+    font-size: 23px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    background: -webkit-linear-gradient(#FFF, #C4C3C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 20px;
+}
+h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+h3 {
+    width: 90%;
+    margin: auto;
+    font-size: 15.5px;
+    letter-spacing: .75px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #F9EBE9;
+    padding: 12.5px 0;
+}
+h4 {
+    font-size: 14px;
+    letter-spacing: .75px;
+    line-height: 20px;
+}
+h4 span {
+    background: -webkit-linear-gradient(#FFF, #C4C3C3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h5 {
+    font-size: 10px;
+    letter-spacing: .75px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.section1 p, .section2 p, .section3 p, .section4 p, .section4-sub p {
+    font-size: 10.5px;
+    letter-spacing: .5px;
+    font-weight: 100;
+    line-height: 22px;
+    color: #979797;
+    padding-top: 20px;
+}
+.project p {
+    width: 85%;
+    margin: auto;
+    font-size: 11px;
+    letter-spacing: .75px;
+    font-weight: 100;
+    line-height: 17px;
+    color: #D2D1D1;
+    padding-top: 10px;
+}
+.date p {
+    font-size: 10px;
+    line-height: 15px; 
+    color: #D2D1D1;
+    padding-top: 3px;
+}
+.studies p span {
+    color: #D2D1D1;
+}
+.contact p {
+    font-size: 10.5px;
+    letter-spacing: .5px;
+    font-weight: 100;
+    padding-top: 0px;
+}
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: #9D8AFA;
+    color: #F9EBE9;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+#back-to-top-btn:hover, #back-to-top-btn:focus {
+    background-color: #D2D1D1;
+    color: #4b3e8b;
+}
+/* Tablet devices, Global styling */ @media screen and (min-width: 600px) {
+    h1 {
+        font-size: 28px;
+        line-height: 35px;
+        padding-top: 23px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        width: 80%;
+        font-size: 19.5px;
+        line-height: 23px;
+        padding: 17.5px 0;
+    }
+    h4 {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    h5 {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .section1 p, .section2 p, .section3 p, .section4 p, .section4-sub p {
+        font-size: 15.5px;
+        line-height: 27px;
+        padding-top: 23px;
+    }
+    .project p {
+        width: 80%;
+        font-size: 15px;
+        line-height: 20px;
+        padding-top: 15px;
+    }
+    .date p {
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 8px;
+    }
+    .contact p {
+        font-size: 15.5px;
+        padding-top: 3px;
+    }
+    #back-to-top-btn {
+        bottom: 100px;
+        right: 10px;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+}
+/* Larger devices, Global styling */ @media screen and (min-width: 900px) {
+    h1 {
+        font-size: 33px;
+        line-height: 40px;
+        padding-top: 27px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h5 {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    .section1 p, .section2 p, .section3 p, .section4 p, .section4-sub p {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 25px;
+    }
+    .project p {
+        width: 85%;
+        line-height: 25px;
+        padding-top: 18px;
+    }
+    .date p {
+        line-height: 27px;
+        padding-top: 10px;
+    }
+    .contact p {
+        font-size: 19px;
+        padding-top: 6px;
+    }
+    #back-to-top-btn {
+        bottom: 120px;
+    }
+}
+
+
+/* Header Styles */
+header {
+    background-color: #000B17;
+    padding: 20px 0;
+}
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+}
+.logo {
+    width: 80px;
+    padding-top: 5px;
+}
+.links {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    color: #C4C3C3;
+    font-size: 13.5px;
+    font-weight: 400;
+    padding: 0 4px;
+}
+.links a:hover {
+    font-weight: 600;
+    color: #FFF;
+    transition: all 0.4s linear;
+}
+.links a:active {
+    font-weight: 600;
+}
+.socials-container {
+    display: flex;
+}
+.socials {
+    width: 27px;
+    padding: 3px 7px 0px 7px;
+}
+/* Tablet devices, Header styling */ @media screen and (min-width: 600px) {
+    .nav-center {
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+    }
+    .logo {
+        width: 120px;
+        padding-top: 3px;
+    }
+    .links a {
+        font-size: 16.5px;
+        padding: 0 15px;
+    }
+    .socials {
+        width: 37px;
+        padding: 0px 9px;
+    }
+}
+/* Larger devices, Header styling */ @media screen and (min-width: 900px) {
+    .nav-center {
+        width: 70%;
+        padding: 20px 0;
+    }
+    .logo {
+        width: 140px;
+        padding-top: 3px;
+    }
+    .links a {
+        font-size: 21px;
+        padding: 0 20px;
+    }
+    .socials {
+        width: 54px;
+        padding: 0px 15px;
+    }
+}
+
+
+/* Section 1 Styles */
+main {
+    background-color: #001020;
+    color: #FFF;
+    margin-top: -1;
+}
+section {
+    width: 80%;
+    margin: auto;
+    padding: 25px 0;
+}
+.gradient-button {
+    margin-top: 20px;
+    padding: 10px 17px;
+    font-size: 12px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #000;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.gradient-button:hover{
+    box-shadow: 0 10px 20px #000, 0 6px 6px #000;
+}
+.gradient-button-1 {
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+}
+.gradient-button-1:hover {
+    background-position: right center;
+}
+.gradient-bar {
+    padding-top: 35px;
+    width: 11%;
+}
+.gradient-bar-2 {
+    width: 11%;
+    margin: auto;
+}
+/* Tablet devices, Section 1 styling */ @media screen and (min-width: 600px) {
+    section {
+        width: 70%;
+    }
+    .gradient-button {
+        margin-top: 30px;
+        padding: 12px 19px;
+        font-size: 15px;
+    }
+    .gradient-bar {
+        padding-top: 45px;
+        width: 13%;
+    }
+    .gradient-bar-2 {
+        width: 13%;
+    }
+}
+/* Larger devices, Section 1 styling */ @media screen and (min-width: 900px) {
+    section {
+        width: 60%;
+    }
+    .gradient-button {
+        margin-top: 40px;
+        padding: 15px 20px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+}
+
+
+/* Project Styles ... Section 2 */
+.projects-container {
+    padding: 10px 0 20px 0;
+}
+.project {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    padding: 0 0 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px #C4C3C3;
+}
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11px;
+    letter-spacing: .5px;
+    padding: 15px 0;
+    color: #FAE2DF;
+}
+.project button {
+    background-color: #9D8AFA;
+    border: none;
+    margin: 0 20px;
+    padding: 4px 10px;
+    display: inline-block;
+    font-size: 11px;
+    color: #F9EBE9;
+    cursor: pointer;
+}
+.project button:hover {
+    color: #9D8AFA;
+    background-color: #C6C6C6;
+}
+/* Tablet devices, Project styling */ @media screen and (min-width: 600px) {
+    .projects-container {
+        padding: 20px 0 30px 0;
+    }
+    .project {
+        width: 70%;
+        padding: 0 0 30px 0;
+    }
+    .skills ul {
+        font-size: 15px;
+        padding: 20px 0;
+    }
+    .project button {
+        font-size: 15px;
+        margin: 3px 25px;
+        padding: 6px 11px;
+    }
+}
+/* Larger devices, Project styling */ @media screen and (min-width: 900px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+    .project {
+        width: 100%;
+        padding: 0 0 40px 0;
+    }
+    .skills ul {
+        padding: 30px 0;
+    }
+    .project button {
+        margin: 6px 25px;
+        padding: 8px 11px;
+    }
+}
+
+
+/* Graphic Project Styles */
+button {
+    border: none;
+}
+.graphics-slideshow {
+    display: none;
+    padding-top: 45px;
+}
+.mySlides1, .mySlides2, .mySlides3 {
+    padding: 0 25px;
+}
+.slideshow-container {
+    max-width: 1850px;
+    position: relative;
+    margin: auto;
+    padding: 10px 0;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 5px;
+    margin-top: -22px;
+    color: #F9EBE9;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px;
+}
+.prev:hover, .next:hover {
+    background-color: #D2D1D1;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* Tablet devices, Graphic project styling */ @media screen and (min-width: 600px) {
+    .mySlides1, .mySlides2, .mySlides3 {
+        padding: 0 40px;
+    }
+    .slideshow-container {
+        padding: 20px 0;
+    }
+    .prev, .next {
+        padding: 9px;
+        font-size: 23px;
+    }
+}
+/* Larger devices, Graphic project styling */ @media screen and (min-width: 900px) {
+    .slideshow-container {
+        padding: 35px 0;
+    }
+}
+
+
+/* Technology Styles ... Section 3 */
+.technology-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: auto;
+}
+.technology-skill {
+    padding-top: 25px;
+}
+.technology-skill ul {
+    list-style-type: none;
+    padding-top: 3px;
+}
+.technology-skill li {
+    font-size: 10px;
+    color: #D2D1D1;
+    padding: 2px 0;
+}
+.technology-skill img {
+    width: 15%;
+    padding-bottom: 2px;
+}
+/* Tablet devices, Technology styling */ @media screen and (min-width: 600px) {
+    .technology-container {
+        width: 80%;
+    }
+    .technology-skill {
+        padding-top: 30px;
+    }
+    .technology-skill ul {
+        padding-top: 8px;
+    }
+    .technology-skill li {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .technology-skill img {
+        width: 18%;
+        padding-bottom: 7px;
+    }
+}
+
+
+/* About Styles ... Section 4 */
+.dates-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 90%;
+    margin: auto;
+}
+.date {
+    padding-top: 15px;
+}
+.studies {
+    padding: 15px 0;
+}
+.studies p {
+    padding-top: 1px; 
+}
+/* Tablet devices, About styling */ @media screen and (min-width: 600px) {
+    .dates-container {
+        width: 80%;
+    }
+    .date {
+        padding-top: 20px;
+    }
+    .studies {
+        padding: 20px 0;
+    }
+    .studies p {
+        padding-top: 4px;
+    }
+}
+/* Larger devices, About styling */ @media screen and (min-width: 900px) {
+    .studies p {
+        padding: 8px 0;
+    }
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #000B17;
+    color: #FFF;
+    margin-top: -1;
+}
+.footer-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact { 
+    padding: 20px 0;
+}
+/* Tablet devices, Footer styling */ @media screen and (min-width: 600px) {
+    .footer-container {
+        width: 70%;
+    }
+}
+/* Larger devices, Footer styling */ @media screen and (min-width: 900px) {
+    .footer-container {
+        width: 65%;
+    }
+}
